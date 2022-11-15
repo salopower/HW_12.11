@@ -1,6 +1,15 @@
-number = int(input("Enter a three-digit number: "))
-number_list = list(str(number))
-number_list.reverse()
-reversed_number = "".join(number_list)
-print(f"Reversed number: {reversed_number}")
+number = int(input('Enter a three-digit number: '))
+reversed_number = 0
+while number > 0:
+    num = number % 10
+
+    number = number // 10
+
+    reversed_number = reversed_number * 10
+
+    reversed_number = reversed_number + num
+
+print(f'Reversed number is: {reversed_number}')
+
+
 
